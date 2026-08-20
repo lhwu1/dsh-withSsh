@@ -1,0 +1,4 @@
+export const NS = 'dsh-withssh'
+export const zh = { view: 'SSH 控制台', connect: '连接服务器', disconnect: '断开连接', host: '主机', port: '端口', username: '账号', password: '密码', hostKey: '主机密钥指纹', confirmHost: '确认并连接', untrusted: '首次连接必须核对主机密钥指纹。', command: '输入命令', description: '命令含义（必填）', execute: '执行', connected: '已连接', unconfigured: '尚未配置 SSH 连接' } as const
+export const en = { view: 'SSH Console', connect: 'Connect server', disconnect: 'Disconnect', host: 'Host', port: 'Port', username: 'Username', password: 'Password', hostKey: 'Host key fingerprint', confirmHost: 'Confirm and connect', untrusted: 'Verify the host key fingerprint before continuing.', command: 'Command', description: 'Command meaning (required)', execute: 'Run', connected: 'Connected', unconfigured: 'SSH is not configured' } as const
+export type SshLocaleKey = keyof typeof zh

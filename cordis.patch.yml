@@ -1,0 +1,6 @@
+- insert:
+    - id: dsh-withssh
+      name: dsh-withssh
+    - id: dsh-withssh-web
+      name: dsh-withssh/web
+      inject: [sshConsole]
