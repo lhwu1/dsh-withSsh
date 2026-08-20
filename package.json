@@ -2,6 +2,13 @@
   "name": "dsh-withssh",
   "version": "0.1.0",
   "description": "Session-scoped SSH console for DeepSeek Harness",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lhwu1/dsh-withSsh.git"
+  },
+  "bugs": "https://github.com/lhwu1/dsh-withSsh/issues",
+  "homepage": "https://github.com/lhwu1/dsh-withSsh#readme",
+  "keywords": ["deepseek-harness", "dsh", "ssh", "terminal", "plugin"],
   "license": "MIT",
   "type": "module",
   "main": "lib/host/index.mjs",
@@ -12,7 +19,7 @@
     "./client": "./lib/client.js",
     "./package.json": "./package.json"
   },
-  "files": ["lib/", "cordis.patch.yml", "README.md", "LICENSE"],
+  "files": ["docs/", "lib/", "cordis.patch.yml", "README.md", "LICENSE"],
   "dsh": {
     "bundle": { "patch": "./cordis.patch.yml" },
     "client": {
@@ -21,7 +28,7 @@
     }
   },
   "scripts": {
-    "prepare": "npm run build",
+    "prepack": "npm run validate",
     "build": "tsdown",
     "dev": "tsdown --watch",
     "typecheck": "tsc --noEmit",
